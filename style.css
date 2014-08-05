@@ -618,8 +618,8 @@ header .login p {
 .h-margin h3 {
   margin-bottom: 20px;
 }
-.objetivos li {
-  margin: 15px;
+.historia img {
+  margin-right: 10px;
 }
 .evento-bloque {
   text-decoration: none;
@@ -646,6 +646,9 @@ header .login p {
 }
 .evento-bloque a {
   color: #ffffff;
+}
+.border-bottom {
+  border-bottom: solid 2px #003399;
 }
 .articulo {
   border-bottom: 1px solid #003399;
