@@ -319,6 +319,9 @@ figure {
   margin-right: 0;
   padding-right: 0;
 }
+.relative {
+  position: relative;
+}
 .columna {
   margin: 0 1%;
   float: left;
@@ -363,6 +366,12 @@ figure {
   width: 100%;
   height: auto;
   margin: 0;
+}
+.xmall {
+  display: block;
+}
+.no-xmall {
+  display: none;
 }
 .span {
   float: left;
@@ -428,8 +437,6 @@ p {
 }
 body {
   background: #fff;
-  font:  1em / 1.4em "lato";
-  font-weight: 400;
 }
 .logo {
   margin-top: 30px;
@@ -438,47 +445,87 @@ h1 {
   margin-top: 40px;
 }
 h2 {
-  font:  2.05em / 1 "lato";
+  font: normal 2.05em / 1 gotham;
   font-weight: 600;
+  color: #333333;
 }
 h3 {
-  font:  1.5em / 1 "lato";
-  font-weight: 500;
+  font: normal 1.5em / 1 gotham;
+  font-weight: 600;
+  color: #333333;
 }
 p {
-  font:  1.05em / 1.3em "lato";
+  font:  1.05em / 1.3em "lato" "museo-slab";
   font-weight: 400;
+  color: #333333;
 }
 h2,
 h3 {
   margin: 0 0 5px 0;
 }
 a {
-  color: #000000;
+  color: #666666;
   text-decoration: none;
+  font: normal 1em / 1.5em lato;
+  font-weight: 400;
+}
+li {
+  font: normal 1em / 1.5em lato;
+  font-weight: 400;
+  color: #333333;
+}
+span,
+time {
+  font: normal 1em / 1.5em lato;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+hr {
+  height: 1px;
+  background: #003399;
+  border: none;
 }
 /*** HEADER ***/
-header ul {
+header #btn-movil {
+  margin-top: 20px;
+  right: 40px;
+  z-index: 2;
+}
+header #btn-movil a {
+  font-size: 2em;
+  color: #003399;
+}
+header #btn-movil a:hover {
+  color: #001a4d;
+}
+header p {
+  color: #ffffff;
+}
+header .menu-movil {
+  width: 100%;
+}
+header .menu-movil ul {
   margin: 0;
   position: relative;
   width: 100%;
 }
-header ul li {
+header .menu-movil ul li {
+  width: 100%;
+  background: none;
   display: inline-block;
   position: relative;
-  padding: 0 10px;
 }
-header ul li:hover {
+header .menu-movil ul li:hover {
   background: #003399;
 }
-header ul li:hover a,
-header ul li:hover i {
+header .menu-movil ul li:hover a,
+header .menu-movil ul li:hover i {
   color: #ffffff;
 }
-header ul li a {
+header .menu-movil ul li a {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -487,48 +534,121 @@ header ul li a {
   white-space: nowrap;
   vertical-align: middle;
 }
-header ul li a:hover {
+header .menu-movil ul li a:hover,
+header .menu-movil ul li a:active {
   color: #ffffff;
+  background: #003399;
 }
-header ul li a i {
+header .menu-movil ul li a i {
   color: #003399;
 }
-header ul li.closed {
+header .menu-movil ul li.closed {
   display: inline-block !important;
 }
-header ul li:hover ul {
+header .menu-movil ul li:hover ul {
   display: block;
   text-align: center;
 }
-header ul li:hover ul a {
+header .menu-movil ul li:hover ul a {
   color: #000000;
 }
-header ul li:hover ul a:hover {
+header .menu-movil ul li:hover ul a:hover {
   color: #ffffff;
 }
-header ul li ul {
+header .menu-movil ul li ul {
+  width: 100%;
+  background: #ffffff;
+  display: none;
+  max-height: 700%;
+  margin: 0;
+  overflow-y: scroll;
+  left: 0;
+  z-index: 99999;
+}
+header .menu-movil ul li ul li {
+  width: 100%;
+  padding: 0;
+  display: block;
+  border: 1px solid #003399;
+}
+header .menu-movil ul li ul li a {
+  cursor: pointer;
+  background: none;
+}
+header .menu-movil ul li ul li:hover {
+  background: #003399;
+}
+header .menu-desktop ul {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+header .menu-desktop ul li {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+}
+header .menu-desktop ul li:hover {
+  background: #003399;
+}
+header .menu-desktop ul li:hover a,
+header .menu-desktop ul li:hover i {
+  color: #ffffff;
+}
+header .menu-desktop ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+header .menu-desktop ul li a:hover {
+  color: #ffffff;
+}
+header .menu-desktop ul li a i {
+  color: #003399;
+}
+header .menu-desktop ul li.closed {
+  display: inline-block !important;
+}
+header .menu-desktop ul li:hover ul {
+  display: block;
+  text-align: center;
+}
+header .menu-desktop ul li:hover ul a {
+  color: #000000;
+}
+header .menu-desktop ul li:hover ul a:hover {
+  color: #ffffff;
+}
+header .menu-desktop ul li ul {
   background: #ffffff;
   display: none;
   max-height: 700%;
   margin: 0;
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 44px;
   left: 0;
   z-index: 9999;
 }
-header ul li ul li {
+header .menu-desktop ul li ul li {
   display: block;
   border: 1px solid #003399;
 }
-header ul li ul li a {
+header .menu-desktop ul li ul li a {
   cursor: pointer;
 }
-header ul .submenu-200 {
+header .menu-desktop ul .submenu-200 {
   width: 200%;
 }
 header .redes {
-  font:  1.5em / 1.4em "lato";
+  font:  1.5em / 1.4em "lato" "museo-slab";
   font-weight: 400;
   margin: 10px !important;
 }
@@ -543,14 +663,30 @@ header .login {
   color: #ffffff;
   text-align: center;
 }
-header .login p {
+header button {
+  height: 30px;
+  border: solid 1px #003399;
   vertical-align: middle;
   margin: 0;
-  padding: 10px;
+  background: none;
+  color: #003399;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+header button a {
+  color: #003399;
+}
+header button:hover {
+  background: #003399;
+}
+header button:hover a {
+  color: #ffffff;
 }
 .forma-busqueda input,
 .forma-busqueda button {
-  height: 40px;
+  height: 30px;
   padding: 5px;
   font-size: 1em;
 }
@@ -566,6 +702,21 @@ header .login p {
 .forma-busqueda button i {
   display: block;
 }
+.login-side {
+  padding: 5px;
+  font:  1em / 1.5em "lato" "museo-slab";
+  font-weight: lato;
+}
+.login-side .input {
+  border: 1px solid #003399;
+  margin-bottom: 10px;
+  font:  1em / 1.5em "lato" "museo-slab";
+  font-weight: lato;
+  width: 100%;
+}
+.login-side button {
+  background: none;
+}
 /*** SUB CONTAINER ***/
 /*** MAIN ***/
 .main .sidebar li {
@@ -580,23 +731,29 @@ header .login p {
   color: #ffffff;
 }
 .boton {
-  background-color: #003399;
-  color: #ffffff;
-  border: none;
-  padding: 8px 20px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+  background: none;
+  color: #003399;
+  border: solid 1px #003399;
+  padding: 5px 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  font: normal 1em / 1.5em lato;
+  font-weight: 200;
 }
 .boton:hover {
-  background: #0044cc;
+  background: #003399;
+  color: #ffffff;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+}
+.leer-mas:hover {
+  color: #003399;
 }
 .relevantes h2 {
   display: inline;
@@ -611,6 +768,16 @@ header .login p {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+.relevantes .clear,
+.eventos .clear,
+.noticias .clear {
+  margin-bottom: 2px;
+}
+.relevantes h3,
+.eventos h3,
+.noticias h3 {
+  margin-bottom: 0;
+}
 .captions i {
   color: #b3b3b3;
 }
@@ -618,8 +785,13 @@ header .login p {
 .h-margin h3 {
   margin-bottom: 20px;
 }
+/**ABOUT**/
+/*=============*/
 .historia img {
-  margin-right: 10px;
+  margin-left: 10px;
+}
+.dare-mentoring a:hover {
+  color: #003399;
 }
 .evento-bloque {
   text-decoration: none;
@@ -638,7 +810,7 @@ header .login p {
 }
 .evento-bloque span,
 .evento-bloque time {
-  font:  1em / 1.5em "lato";
+  font:  1em / 1.5em "lato" "museo-slab";
   font-weight: 200;
 }
 .evento-bloque:hover {
@@ -652,6 +824,9 @@ header .login p {
 }
 .articulo {
   border-bottom: 1px solid #003399;
+}
+.secundarios {
+  display: none;
 }
 .directorio i {
   color: #003399;
@@ -670,7 +845,7 @@ header .login p {
 }
 .donativos legend {
   border-bottom: solid 1px #003399;
-  font:  1.5em / 1.5em "lato";
+  font:  1.5em / 1.5em "lato" "museo-slab";
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -679,7 +854,7 @@ header .login p {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 5px;
-  font:  0.9em / 1.5em "lato";
+  font:  0.9em / 1.5em "lato" "museo-slab";
   font-weight: 400;
 }
 .donativos input[type="text"],
@@ -694,7 +869,6 @@ header .login p {
 .donativos input[type="url"],
 .donativos textarea,
 .donativos select {
-  background: rgba(255, 255, 255, 0.1);
   border: none;
   height: auto;
   margin: 0;
@@ -704,7 +878,7 @@ header .login p {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin: 0 5px 20px 0;
-  font:  0.9em / 1.5em "lato";
+  font:  0.9em / 1.5em "lato" "museo-slab";
   font-weight: 200;
   border-radius: 3px;
 }
@@ -742,6 +916,11 @@ aside li {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  font: normal 1em / 1.5em lato;
+  font-weight: 400;
+}
+aside li a {
+  color: #666666;
 }
 aside li:hover {
   background: #0044cc;
@@ -772,7 +951,7 @@ aside .donativos {
 /*** FOOTER ***/
 footer {
   background: #003399;
-  padding: 60px;
+  padding: 60px 0;
   color: #ffffff;
 }
 footer div {
@@ -780,8 +959,9 @@ footer div {
   padding: 5px;
 }
 footer div p {
-  font:  1.2em / 1.5em "lato";
+  font:  1.2em / 1.5em "lato" "museo-slab";
   font-weight: 300;
+  color: #ffffff;
 }
 footer ul {
   list-style-type: none;
@@ -789,20 +969,32 @@ footer ul {
 }
 footer ul li {
   margin-bottom: 20px !important;
-  font:  0.95em / 1.5em "lato";
+  font:  0.95em / 1.5em "lato" "museo-slab";
   font-weight: 200;
 }
 footer ul a {
   text-decoration: none;
   color: #ffffff;
+  font:  0.95em / 1.5em "lato" "museo-slab";
+  font-weight: 200;
 }
 footer ul a:hover {
   opacity: 0.5;
 }
 footer i {
-  font:  1.5em / 1.4em "lato";
+  font:  1.5em / 1.4em "lato" "museo-slab";
   font-weight: 400;
   margin-right: 10px;
+}
+footer .border-block {
+  border-bottom: solid 1px #ffffff;
+}
+footer .bottom-li ul {
+  text-align: center;
+}
+footer .bottom-li ul li {
+  display: inline-block;
+  color: #ffffff;
 }
 /*** MEDIA QUERIES ***/
 /* min-width 321px */
@@ -1047,6 +1239,9 @@ footer i {
   }
   .no-large {
     display: none;
+  }
+  .secundarios {
+    display: inline-block;
   }
 }
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */

@@ -30,4 +30,32 @@
 
 	});
 
+	/**   MENU MOVIL   **/
+
+	// Menú móvil
+		//mostrarMenu();
+		toggleMenuMovil();
+
+	function mostrarMenu() {
+		$(window).resize(function(){
+			if ($(window).width() > 750)
+		   		$('.navegacion').attr('style', 'display: block');
+		   	else
+		   		$('.navegacion').attr('style', 'display: inline');
+		});
+	}
+
+	function toggleMenuMovil(){
+		$('#btn-movil').on('click', function(e){
+			e.preventDefault();
+			if($('.navegacion').css('display')=='none'){
+				$(this).find('a').css('color', '#003399');
+				$('.navegacion').slideDown('fast');
+			} else {
+				$(this).find('a').css('color', '#003399');
+				$('.navegacion').slideUp('fast');
+			}
+		});
+	}
+
 })(jQuery);

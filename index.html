@@ -17,6 +17,8 @@
 		<script type="text/javascript" src="//use.typekit.net/faa0xbx.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+
+
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 	</head>
@@ -29,32 +31,67 @@
 
 			<header class="margin-bottom">
 				<div class="width clearfix">
-					<div class="columna xmall-3 right login">
-						<p>Log in <i class="fa fa-user"></i></p>
-					</div>
-					<h1 class="columna xmall-5 logo">
+					
+					<h1 class="columna xmall-10 medium-8 large-5 left logo">
 						<a href="index.html">
 							<img src="images/logo.png" alt="" />
 						</a>
 					</h1>
 
-					<div class="clear"></div>	
+					<div class="columna xmall-1 right no-large" id="btn-movil">
+						<a href="#"><i class="fa fa-bars"></i></a>
+					</div>
+
+					<div class="clear margin-bottom"></div>	
 				
-					<div class="clearfix redes columna xmall-2 right">
+					<!-- <div class="clearfix redes columna xmall-2 right">
 						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-facebook"></i></a>
 						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-google-plus"></i></a>
 						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-twitter"></i></a>
 						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-linkedin"></i></i></a>
-					</div>
+					</div> -->
+					<nav class="navegacion menu-movil columna no-xmall no-medium no-large margin-bottom">
+						<ul>
+							<li>
+								<a href="about.html">Acerca </a>
+							</li>
+							<li>
+								<a href="">Involucramiento <i class="fa fa-caret-down"></i></a>
+								
+									<ul>
+										<li><a href="mentoring.html">Mentoring</a></li>
+										<li><a href="boa.html">BOA</a></li>
+										<li><a href="dare.html">Dare</a></li>
+										<li><a href="coaching.html">Coaching</a></li>
+										<li><a href="sponsor.html">Sponsor</a></li>
+										<li><a href="tn_taker.html">TN Taker</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="">Noticias <i class="fa fa-caret-down"></i></a>
+									<ul>
+										<li><a href="eventos.html">Eventos</a></li>
+										<li><a href="comunidad.html">Comunidad AIESEC</a></li>
+										<li><a href="logros.html">Logros</a></li>
+										<li><a href="newsletter.html">Newsletter</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="galeria.html">Galerías</a>
+							</li>
+							<li>
+								<a href="contacto.html">Contacto </a>
+							</li>
+						</ul>
+					</nav><!--MENU MOVIL-->
 
-					<div class="clear"></div>
-					<nav>
-						<ul class="columna xmall-9">
+					<nav class="menu-desktop columna no-xmall no-medium large large-9">
+						<ul class="span">
 							<li>
 								<a href="about.html">Acerca </a>
 							</li>
 							<li class="">
-								<a href="">Involucramiento y beneficios <i class="fa fa-caret-down"></i></a>
+								<a href="">Involucramiento <i class="fa fa-caret-down"></i></a>
 								
 									<ul>
 										<li><a href="mentoring.html">Mentoring</a></li>
@@ -81,30 +118,32 @@
 								<a href="contacto.html">Contacto </a>
 							</li>
 						</ul>
-					</nav>	
-
-					<form action="/" class="forma-busqueda clearfix columna xmall-3">
+					</nav><!--MENU DESKTOP-->
+					<form action="/" class="clearfix forma-busqueda columna xmall-8 medium-4 large-3 right margin-bottom">
 						<input class="span xmall-10" type="text" placeholder="Buscar">
 						<button class="span xmall-2" type="submit"><i class="fa fa-search"></i></button>
-					</form>		
+					</form>	
+					<div class="clear no-xmall medium"></div>
+					<button class="columna xmall-4 no-medium right" type="submit"><a href="">Log in <i class="fa fa-user"></i></a></button>	
 				</div>	
 			</header>
 			
 			<div class="width clearfix">
 				
-				<div class="main columna xmall-9">
+				<div class="main columna xmall-12 medium-8 large-9">
 				
 					 <section class="relevantes clearfix"><!--RELEVANTES-->
-						<img class="margin-bottom" src="images/relevantes_01.jpg" alt="">
-						<div class="columna xmall-9">
-							<h2>Noticia Relevante.</h2>
+						<img class="span margin-bottom" src="images/relevantes_01.jpg" alt="">
+						<div class="columna xmall-12">
+							<h2>Lo Más Relevante.</h2>
+							<div class="clear"></div>
 							<span>Categoría</span>
 							<time datetime="2014-05-15">15-05-14</time>
 							
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim.</p>
 						</div>
 						<a href="#" class="boton right">Leer más</a>
-						<div class="columna xmall-3 right">
+						<div class="columna xmall-12 medium-6 large-3 right">
 							<ul id="captions" class="right captions">
 								<li><i class="fa fa-square"></i> </li>
 								<li><i class="fa fa-square"></i> </li>
@@ -116,85 +155,125 @@
 
 					 <section class="full eventos clearfix"><!--Eventos-->
 						<div class="margin-bottom">
-						 	<h2 class="columna xmall-7">Eventos</h2>
-						 	<a href="#" class="boton right"> Ver todos los eventos</a>
+						 	<h2 class="columna xmall-4">Eventos</h2>
+						 	<a href="eventos.html" class="columna xmall no-medium boton right margin-bottom"> <i class="fa fa-plus"></i></a>
+						 	<a href="eventos.html" class="columna no-xmall medium boton right margin-bottom"> Ver todos los eventos</a>
 						</div>	
 						<article class="clearfix columna xmall-12 margin-bottom">
-					 		<img class="block columna xmall-6" src="images/evento_01.jpg" alt="evento_01">
-					 		<div class="columna xmall-6 ">
+					 		<img class="block columna xmall-12 large-6 margin-bottom" src="images/evento_01.jpg" alt="evento_01">
+					 		<div class="columna xmall-12 large-6 clearfix">
 						 		<h3>Evento principal</h3>
-						 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. Vivamus adipiscing tellus vel sapien tincidunt luctus. </p>
+						 		<div class="clear"></div>
+									<span>Categoría</span>
+									<time datetime="2014-05-15">15-05-14</time>
+						 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. <hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a> </p>
 					 		</div>
 					 	</article>
 						
-						<article class="clearfix columna xmall-4">
-						 		<img class="block" src="images/evento_02.jpg" alt="evento_01">
+						<article class="secundarios clearfix columna xmall-4">
+						 		<img class="block margin-bottom" src="images/evento_02.jpg" alt="evento_01">
 						 		<h3>Evento uno</h3>
-						 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. Vivamus adipiscing tellus vel sapien tincidunt luctus. </p>
+						 		<div class="clear"></div>
+								<span>Categoría</span>
+								<time datetime="2014-05-15">15-05-14</time>
+						 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. <hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a></p>
 					 	</article>
 						
-				 		<article class="columna xmall-4">
-					 		<img class="block" src="images/evento_03.jpg" alt="evento_01">
-					 		<h3>Evento dos</h3>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. Vivamus adipiscing tellus vel sapien tincidunt luctus. </p>
+				 		<article class="secundarios clearfix columna xmall-4">
+						 		<img class="block margin-bottom" src="images/evento_03.jpg" alt="evento_01">
+						 		<h3>Evento dos</h3>
+						 		<div class="clear"></div>
+								<span>Categoría</span>
+								<time datetime="2014-05-15">15-05-14</time>
+						 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. <hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a></p>
 					 	</article>
 
-					 	<article class="columna xmall-4">
-					 		<img class="block" src="images/evento_03.jpg" alt="evento_01">
-					 		<h3>Evento dos</h3>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. Vivamus adipiscing tellus vel sapien tincidunt luctus. </p>
+					 	<article class="secundarios columna xmall-4">
+					 		<img class="block margin-bottom" src="images/evento_03.jpg" alt="evento_01">
+					 		<h3>Evento tres</h3>
+					 		<span>Categoría</span>
+							<time datetime="2014-05-15">15-05-14</time>
+							<div class="clear"></div>
+					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum. <hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a></p>
 					 	</article>
 
 					 </section><!--Eventos-->
 
-					 <section class="full clearfix"><!--Noticias-->
+					 <section class="full clearfix margin-bottom"><!--Noticias-->
 						<div class="clearfix margin-bottom">
 						 	<h2 class="columna xmall-7">Noticias</h2>
-						 	<a href="#" class="boton right"> Ver todas las noticias</a>
+						 	<a href="noticias.html" class="columna xmall no-medium boton right margin-bottom"> <i class="fa fa-plus"></i></a>
+						 	<a href="#" class="columna no-xmall medium boton right margin-bottom"> Ver todas las noticias</a>
 						</div>	
 						<article class="columna xmall-12 margin-bottom">
-					 		<img class="block columna xmall-6" src="images/evento_01.jpg" alt="evento_01">
-					 		<div class="columna xmall-6 ">
+					 		<img class="block columna xmall-12 large-6 margin-bottom" src="images/evento_01.jpg" alt="evento_01">
+					 		<div class="columna xmall-12 large-6">
 						 		<h3 class="no-margin">Noticia principal</h3>
-						 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis.</p>
+						 		<div class="clear"></div>
+								<span>Categoría</span>
+								<time datetime="2014-05-15">15-05-14</time>
+
+						 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. Maecenas eget magna enim. Ut suscipit nunc id diam blandit, quis ornare urna fermentum.						 		<hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a> </p>
 					 		</div>
 					 	</article>
 						
-						<article class="columna xmall-4">
-					 		<img class="block" src="images/evento_02.jpg" alt="evento_01">
+						<article class="secundarios columna xmall-4">
+					 		<img class="block margin-bottom" src="images/evento_02.jpg" alt="evento_01">
 					 		<h3>Noticia uno</h3>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis.  </p>
+					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. <hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a> </p>
 					 	</article>
 						
-				 		<article class="columna xmall-4">
-					 		<img class="block" src="images/evento_03.jpg" alt="evento_01">
+				 		<article class="secundarios columna xmall-4">
+					 		<img class="block margin-bottom" src="images/evento_03.jpg" alt="evento_01">
 					 		<h3>Noticia dos</h3>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. </p>
+					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. <hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a></p>
 					 	</article>
 
-					 	<article class="columna xmall-4">
-					 		<img class="block" src="images/evento_03.jpg" alt="evento_01">
+					 	<article class="secundarios columna xmall-4">
+					 		<img class="block margin-bottom" src="images/evento_03.jpg" alt="evento_01">
 					 		<h3>Noticia dos</h3>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. </p>
+					 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum adipiscing convallis. <hr>
+						 		<a href="" class="columna xmall leer-mas right"><i class="fa fa-plus"></i> Leer más...</a></p>
 					 	</article>
 
 					 </section><!--Eventos-->
 	 
 				</div><!-- main -->
 			
-				<aside class="sidebar columna xmall-3">
-					<section class="margin-bottom">
+				<aside class="sidebar clearfix columna xmall-12 medium-4 large-3">
+					<section class="margin-bottom span no-xmall medium medium-12">
+						<img class="block" src="images/directorio.jpg" alt="donativos.jpg">
+						<h3 class="text-center"><i class="fa fa-user"></i> Login</h3>
+
+						<div class="border clearfix">
+							<form class="columna medium-11 center block login-side margin-bottom" action="" method="">
+							<label for="usuario">Usuario</label>
+							<input class="input" type="text" name="usuario">
+							<label for="password">Password:</label>
+							<input class="input" type="text" name="password">
+							  <button class="boton right margin-bottom" type="submit" value="Submit">Submit</button>
+							</form>
+						</div>	
+					</section>
+
+					<section class="margin-bottom span no-xmall medium medium-12">
 						<img class="block" src="images/directorio.jpg" alt="directorio.jpg">
 						<h3 class="text-center">Directorio</h3>
 						<ul class="border no-margin list-reset">
-							<li><a>Información de Alumni</a></li>
-							<li><a>Colaboradores</a></li>
-							<li><a>Patrocinadores</a></li>
-							<li><a>Salón de la fama</a></li>
+							<li><a href="colaboradores.html">Colaboradores</a></li>
+							<li><a href="patrocinadores.html">Patrocinadores</a></li>
+							<li><a href="salon-fama">Salón de la fama</a></li>
 						</ul>
 					</section>
 
-					<section class="margin-bottom">
+					<section class="margin-bottom span no-xmall medium medium-12">
 						<img class="block" src="images/directorio.jpg" alt="donativos.jpg">
 						<h3 class="text-center">Donativos</h3>
 
@@ -203,22 +282,14 @@
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam.
 							</p>
 
-							<a class="boton">
+							<a class="boton" href="donativos.html">
 								Conoce más
 							</a>
 						</div>	
 					</section>
 
-					<section class="full margen-top">
-						<img class="block" src="images/directorio.jpg" alt="directorio.jpg">
-						<h3 class="text-center">Oportunidad de negocio</h3>
-
-							<ul class="border no-margin list-reset">
-								<li><a href="">Fusce in massa vitae nisi vestibulum facilisis sed sed magna.</a></li>
-								<li><a>Pellentesque sit amet ipsum eu diam consequat pellentesque nec eu mi.</a></li>
-								<li><a>Pellentesque sit amet ipsum eu diam consequat pellentesque nec eu mi.</a></li>
-								<li><a>Pellentesque sit amet ipsum eu diam consequat pellentesque nec eu mi.</a></li>
-							</ul>
+					<section class="full margen-top columna xmall-6 medium-12">
+						
 						</section>
 					</div>
 				</aside>
@@ -227,48 +298,60 @@
 
 		</div><!-- container -->
 
-		<footer class="clearfix full">
-			<div class="width">
-				<div class="columna xmall-4">
-					<p>Organismo interno de control</p>
+		<footer class=" full">
+			<div class="width clearfix">
+				<div class="columna xmall-12 medium-4">
+					<p>Donaciones</p>
+					<ul >
+						<li><a href="#">Formas de donar</a></li>
+						<li><a href="#">Apóyanos</a></li>
+						<li><a href="#">Tu cooperación es muy valiosa</a></li>
+						<li><a href="#">¿Quieres donar?</a></li>
+						<li><a href="#">Instituciones.</a></li> 
+						<li><a href="#">Programas especiales.</a></li>
+					</ul>
+				</div>
+				<div class="clear xmall no-medium border-block margin-bottom"></div>
+				<div class="columna xmall-12 medium-4">
+					<p>Sobre éste sitio</p>
 					<ul>
 						<li><a href="#">Explicación del uso ó manejo de la Página</a></li>
-						<li><a href="#">Servicios e Informes</a></li>
-						<li><a href="#">Transparencia/órgano interno de control</a></li>
-						<li><a href="#">Normatividad de uso y Confidencialidad</a></li>
+						<li><a href="#">Transparencia
 						<li><a href="#">Sugerencias</a></li> 
 						<li><a href="#">Administración</a></li>
 					</ul>
 				</div>
-
-				<div class="columna xmall-4">
+				<div class="clear xmall no-medium border-block margin-bottom"></div>
+				<div class="columna xmall-12 medium-4">
 					<p>Follow us</p>
 					<ul>
 						<li><a href="#"><i class="fa fa-facebook-square"></i> Síguenos en Facebook para estar enterado de lo que sucede.</a></li>
 						<li><a href="#"><i class="fa fa-twitter-square"></i> Síguenos en Facebook para estar enterado de lo que sucede.</a></li>
 						<li><a href="#"><i class="fa fa-linkedin-square"></i> Síguenos en LinkedIn para conocer más sobre nuestros talentos y servicios.</a></li>
+					</ul>
+				</div>
+				<div class="clear xmall no-medium border-block margin-bottom"></div>
+				<div class="columna xmall-12 bottom-li">
+					<ul>
+						<li><a href="#">Aviso de privacidad</a></li>
+						<li>/</li>
+						<li><a href="#">Servicios e informes</a></li>
+						<li>/</li>
+						<li><a href="#">Órgano interno de control</a></li>
+						<li>/</li>
+						<li><a href="#">Directorio</a></li>
+					</ul>
 					
-					</ul>
 				</div>
-
-				<div class="columna xmall-4">
-					<p>Donaciones</p>
-					<ul >
-						<li><a href="#">Explicación del uso ó manejo de la Página</a></li>
-						<li><a href="#">Servicios e Informes</a></li>
-						<li><a href="#">Transparencia/órgano interno de control</a></li>
-						<li><a href="#">Normatividad de uso y Confidencialidad</a></li>
-						<li><a href="#">Sugerencias</a></li> 
-						<li><a href="#">Administración</a></li>
-					</ul>
-				</div>
-			</div>
 			</div>
 			
 
 		</footer>
 
 	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/functions.js"></script>
 
 </html>
 
