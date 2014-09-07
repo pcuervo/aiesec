@@ -38,22 +38,23 @@
 
 	function mostrarMenu() {
 		$(window).resize(function(){
-			if ($(window).width() > 750)
-		   		$('.navegacion').attr('style', 'display: block');
+			if ($(window).width() < 750)
+		   		$('.menu-movil').attr('style', 'display: block');
 		   	else
-		   		$('.navegacion').attr('style', 'display: inline');
+		   		$('.menu-movil').attr('style', 'display: none');
+
 		});
 	}
 
 	function toggleMenuMovil(){
 		$('#btn-movil').on('click', function(e){
 			e.preventDefault();
-			if($('.navegacion').css('display')=='none'){
+			if($('.menu-movil').css('display')=='none'){
 				$(this).find('a').css('color', '#003399');
-				$('.navegacion').slideDown('fast');
+				$('.menu-movil').slideDown('fast');
 			} else {
 				$(this).find('a').css('color', '#003399');
-				$('.navegacion').slideUp('fast');
+				$('.menu-movil').slideUp('fast');
 			}
 		});
 	}
