@@ -616,6 +616,23 @@ a {
 	a{color: @claro;}	
 }
 
+.galeria-bloque{
+	text-decoration: none; 
+	background: @claro; 
+	color: @oscuro; 
+	border: solid 1px @highlight;
+	border-radius:0 0 5px 5px; 
+	.transition;
+	
+	h3,span,time{margin: (@margen/2); color: @highlight;}
+
+	span, time{.font(1em, 1.5em, 200, "lato"); margin: 0 @margen/2;}
+	
+	&:hover{opacity: 0.5;}
+	
+	a{color: @highlight;}	
+}
+
 .border-bottom{border-bottom: solid 2px @highlight;}
 
 
