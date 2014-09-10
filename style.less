@@ -54,7 +54,7 @@ figure {margin: 0;}
 @claro: 		#fff;
 @oscuro: 		#000;
 @highlight:		#003399; //azul
-@highlight-2:		#868aba; //azul
+@highlight-2:	#868aba; //azul
 
 @twitter: 		#2aa8df;
 @facebook: 		#3c5a97;
@@ -630,7 +630,9 @@ a {
 	
 	&:hover{opacity: 0.5;}
 	
-	a{color: @highlight;}	
+	a{color: @highlight;}
+
+	.info{ border-top: solid 1px @highlight;}	
 }
 
 .border-bottom{border-bottom: solid 2px @highlight;}
@@ -645,6 +647,17 @@ a {
 .directorio{
 		i{color: @highlight;}
 		section{border-bottom: solid 1px @highlight; .margin-bottom;}
+}
+
+.aviso{
+
+		ol{ 
+			list-style-type: decimal;
+			li{
+			.font(1.2em, 1.8em, monion-pro-display);
+		}
+	}
+	
 }
 
 .donativos {
@@ -707,6 +720,8 @@ a {
 			color: @highlight; .font(1em, 1.5em, "minion-pro-display");
 		}
 	}
+
+	img{ width:auto; }
 }
 
 .galeria{
