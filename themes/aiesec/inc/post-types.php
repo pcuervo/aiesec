@@ -6,9 +6,40 @@
 
 	add_action('init', function(){
 
+		// Involucramientos
+		$labels = array(
+			'name'          => 'Involucramientos',
+			'singular_name' => 'Involucramiento',
+			'add_new'       => 'Nuevo Involucramiento',
+			'add_new_item'  => 'Nuevo Involucramiento',
+			'edit_item'     => 'Editar Involucramiento',
+			'new_item'      => 'Nuevo Involucramiento',
+			'all_items'     => 'Todos',
+			'view_item'     => 'Ver Involucramientos',
+			'search_items'  => 'Buscar Involucramientos',
+			'not_found'     => 'No se encontró',
+			'menu_name'     => 'Involucramientos'
+		);
+
+		$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'involucramientos' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'taxonomies'         => array( 'category' ),
+			'supports'           => array( 'title', 'editor', 'thumbnail' )
+		);
+		register_post_type( 'involucramientos', $args );
 
 		// NOTICIAS
-		/*$labels = array(
+		$labels = array(
 			'name'          => 'Noticias',
 			'singular_name' => 'Noticia',
 			'add_new'       => 'Nueva Noticia',
@@ -34,9 +65,9 @@
 			'has_archive'        => true,
 			'hierarchical'       => false,
 			'menu_position'      => 6,
-			'taxonomies'         => array( 'category' ),
+			'taxonomies'         => array( 'tipos-de-noticias' ),
 			'supports'           => array( 'title', 'editor', 'thumbnail' )
 		);
-		register_post_type( 'noticia', $args );*/
+		register_post_type( 'noticias', $args );
 
 	});

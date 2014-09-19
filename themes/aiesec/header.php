@@ -8,16 +8,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="cleartype" content="on">
-
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<script src="//use.typekit.net/faa0xbx.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<?php wp_head(); ?>
 	</head>
-
 	<body>
 		<!--[if lt IE 9]>
 			<p class="chromeframe">Estás usando una versión <strong>vieja</strong> de tu explorador. Por favor <a href="http://browsehappy.com/" target="_blank"> actualiza tu explorador</a> para tener una experiencia completa.</p>
 		<![endif]-->
-		<div class="container">
+		<div class="container ">
 			<header class="margin-bottom">
 				<div class="width clearfix">
 					<h1 class="columna xmall-10 medium-8 large-5 left logo">
@@ -29,6 +30,12 @@
 						<a href="#"><i class="fa fa-bars"></i></a>
 					</div>
 					<div class="clear margin-bottom"></div>
+					<!-- <div class="clearfix redes columna xmall-2 right">
+						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-facebook"></i></a>
+						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-google-plus"></i></a>
+						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-twitter"></i></a>
+						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-linkedin"></i></i></a>
+					</div> -->
 					<nav class=" width navegacion menu-movil columna no-xmall no-large margin-bottom">
 						<ul>
 							<li>
@@ -39,13 +46,13 @@
 							</li>
 							<li>
 								<a href="">Noticias <i class="fa fa-caret-down"></i></a>
-									<ul>
-										<li><a href="eventos.html">Eventos</a></li>
-										<!--<li><a href="comunidad.html">Comunidad AIESEC</a></li>
-										<li><a href="logros.html">Logros</a></li>-->
-										<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento">Newsletter</a></li>
-										<li><a href="oportunidades-de-negocio.html">Oportunidades de negocio</a></li>
-									</ul>
+								<ul>
+									<li><a href="eventos.html">Eventos</a></li>
+									<!--<li><a href="comunidad.html">Comunidad AIESEC</a></li>
+									<li><a href="logros.html">Logros</a></li>-->
+									<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento">Newsletter</a></li>
+									<li><a href="oportunidades-de-negocio.html">Oportunidades de negocio</a></li>
+								</ul>
 							</li>
 							<li>
 								<a href="galeria.html">Galerías</a>
@@ -55,7 +62,6 @@
 							</li>
 						</ul>
 					</nav><!--MENU MOVIL-->
-
 					<nav class="menu-desktop columna no-xmall no-medium large large-9">
 						<ul class="span">
 							<li>

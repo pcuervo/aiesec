@@ -8,21 +8,19 @@
 
 	function custom_taxonomies_callback(){
 
-		// AUTORES
-		/*if( ! taxonomy_exists('autores')){
-
+		//Tipo de noticia
+		if( ! taxonomy_exists('tipos-de-noticias')){
 			$labels = array(
-				'name'              => 'Autores',
-				'singular_name'     => 'Autor',
-				'search_items'      => 'Buscar',
-				'all_items'         => 'Todos',
-				'edit_item'         => 'Editar Autor',
-				'update_item'       => 'Actualizar Autor',
-				'add_new_item'      => 'Nuevo Autor',
-				'new_item_name'     => 'Nombre Nuevo Autor',
-				'menu_name'         => 'Autores'
+				'name'              => 'Tipos de noticias',
+				'singular_name'     => 'Tipo de noticia',
+				'search_items'      => 'Buscar tipo de noticia',
+				'all_items'         => 'Todos los tipos de noticias',
+				'edit_item'         => 'Editar tipo de noticia',
+				'update_item'       => 'Actualizar tipo de noticia',
+				'add_new_item'      => 'Nuevo tipo de noticia',
+				'new_item_name'     => 'Nombre Nuevo tipo de noticia',
+				'menu_name'         => 'Tipos de noticias'
 			);
-
 			$args = array(
 				'hierarchical'      => true,
 				'labels'            => $labels,
@@ -30,15 +28,20 @@
 				'show_admin_column' => true,
 				'show_in_nav_menus' => true,
 				'query_var'         => true,
-				'rewrite'           => array( 'slug' => 'autores' ),
+				'rewrite'           => array( 'slug' => 'tipos-de-noticias' ),
 			);
 
-			register_taxonomy( 'autor', 'libro', $args );
-		}*/
-		
-		
+			register_taxonomy( 'tipos-de-noticias', 'noticias', $args );
+		}
+
+
 		// TERMS
-		/*if ( ! term_exists( 'Carlos Fuentes', 'autor' ) ){
-			wp_insert_term( 'Carlos Fuentes', 'autor' );
-		}*/
+		if ( ! term_exists( 'Eventos', 'tipos-de-noticias' ) ){
+			wp_insert_term( 'Eventos', 'tipos-de-noticias' );
+		}
+
+		if ( ! term_exists( 'Oportunidades de negocio', 'tipos-de-noticias' ) ){
+			wp_insert_term( 'Oportunidades de negocio', 'tipos-de-noticias' );
+		}
+
 	}
