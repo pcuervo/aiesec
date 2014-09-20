@@ -43,12 +43,15 @@
 
 		// scripts
 		wp_enqueue_script( 'admin-js', JSPATH.'admin.js', array('jquery'), '1.0', true );
+		wp_enqueue_script('jquery-ui-datepicker');
+		//wp_enqueue_script('jquery-ui-core');
 
 		// localize scripts
 		wp_localize_script( 'admin-js', 'ajax_url', admin_url('admin-ajax.php') );
 
 		// styles
 		wp_enqueue_style( 'admin-css', CSSPATH.'admin.css' );
+		wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 
 	});
 

@@ -7,9 +7,10 @@
 
 	add_action('add_meta_boxes', function(){
 
-		// add_meta_box( id, title, name_meta_callback, post_type, context, priority );
+		add_meta_box( 'fecha', 'Fecha', 'fecha_meta_callback', 'noticias', 'side', 'high' );
 
 	});
+
 
 
 
@@ -17,12 +18,18 @@
 
 
 
-	function name_meta_callback($post){
-		// $name = get_post_meta($post->ID, '_name_meta', true);
-		// wp_nonce_field(__FILE__, '_name_meta_nonce');
-		// echo "<input type='text' class='widefat' id='name' name='_name_meta' value='$name'/>";
+	function fecha_meta_callback($post){
+		$fecha_inicio = get_post_meta($post->ID, '_fecha_inicio_meta', true);
+		$fecha_final = get_post_meta($post->ID, '_fecha_final_meta', true);
+		wp_nonce_field(__FILE__, '_fecha_inicio_meta_nonce');
+		wp_nonce_field(__FILE__, '_fecha_final_meta_nonce');
+echo <<<END
+	<label>De:</label>
+	<input type="text" class="widefat datepicker" id="fecha_inicio" name="_fecha_inicio_meta" value='$fecha_inicio' />
+	<label>A:</label>
+	<input type="text" class="widefat datepicker" id="fecha_final" name="_fecha_final_meta" value='$fecha_final'>
+END;
 	}
-
 
 
 // SAVE METABOXES DATA ///////////////////////////////////////////////////////////////
@@ -32,20 +39,23 @@
 	add_action('save_post', function($post_id){
 
 
-		if ( ! current_user_can('edit_page', $post_id)) 
+		if ( ! current_user_can('edit_page', $post_id))
 			return $post_id;
 
 
-		if ( defined('DOING_AUTOSAVE') and DOING_AUTOSAVE ) 
-			return $post_id;
-		
-		
-		if ( wp_is_post_revision($post_id) OR wp_is_post_autosave($post_id) ) 
+		if ( defined('DOING_AUTOSAVE') and DOING_AUTOSAVE )
 			return $post_id;
 
 
-		if ( isset($_POST['_name_meta']) and check_admin_referer(__FILE__, '_name_meta_nonce') ){
-			update_post_meta($post_id, '_name_meta', $_POST['_name_meta']);
+		if ( wp_is_post_revision($post_id) OR wp_is_post_autosave($post_id) )
+			return $post_id;
+
+
+		if ( isset($_POST['_fecha_inicio_meta']) and check_admin_referer(__FILE__, '_fecha_inicio_meta_nonce') ){
+			update_post_meta($post_id, '_fecha_inicio_meta', $_POST['_fecha_inicio_meta']);
+		}
+		if ( isset($_POST['_fecha_final_meta']) and check_admin_referer(__FILE__, '_fecha_final_meta_nonce') ){
+			update_post_meta($post_id, '_fecha_final_meta', $_POST['_fecha_final_meta']);
 		}
 
 
