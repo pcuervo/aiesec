@@ -44,4 +44,8 @@
 			wp_insert_term( 'Oportunidades de negocio', 'tipos-de-noticias' );
 		}
 
+		if ( ! term_exists( 'Noticias', 'tipos-de-noticias' ) ){
+			wp_insert_term( 'Noticias', 'tipos-de-noticias' );
+		}
+
 	}

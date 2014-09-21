@@ -7,10 +7,14 @@
 
 	add_action('add_meta_boxes', function(){
 
-		add_meta_box( 'fecha', 'Fecha', 'fecha_meta_callback', 'noticias', 'side', 'high' );
+
+		$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+		if( has_term( 'eventos', 'tipos-de-noticias', $post_id ) ) {
+			add_meta_box( 'fecha', 'Fecha', 'fecha_meta_callback', 'noticias', 'side', 'high' );
+		}
+
 
 	});
-
 
 
 

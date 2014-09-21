@@ -22,7 +22,7 @@
 			<header class="margin-bottom">
 				<div class="width clearfix">
 					<h1 class="columna xmall-10 medium-8 large-5 left logo">
-						<a href="index.html">
+						<a href="<?php echo site_url(); ?>">
 							<img src="<?php echo THEMEPATH; ?>images/logo.png" alt="" />
 						</a>
 					</h1>
@@ -38,54 +38,34 @@
 					</div> -->
 					<nav class=" width navegacion menu-movil columna no-xmall no-large margin-bottom">
 						<ul>
-							<li>
-								<a href="about.html">Acerca </a>
-							</li>
-							<li>
-								<a href="involucramiento.html">Involucramiento</a>
-							</li>
-							<li>
-								<a href="">Noticias <i class="fa fa-caret-down"></i></a>
+							<li><a href="<?php echo site_url('acerca'); ?>">Acerca</a></li>
+							<li><a href="<?php echo site_url('involucramientos'); ?>">Involucramiento</a></li>
+							<li><a href="">Noticias <i class="fa fa-caret-down"></i></a>
 								<ul>
-									<li><a href="eventos.html">Eventos</a></li>
-									<!--<li><a href="comunidad.html">Comunidad AIESEC</a></li>
-									<li><a href="logros.html">Logros</a></li>-->
+									<li><a href="<?php echo site_url('noticias'); ?>">Noticias</a></li>
+									<li><a href="<?php echo site_url('eventos'); ?>">Eventos</a></li>
 									<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento">Newsletter</a></li>
-									<li><a href="oportunidades-de-negocio.html">Oportunidades de negocio</a></li>
+									<li><a href="<?php echo site_url('oportunidades-de-negocio'); ?>">Oportunidades de negocio</a></li>
 								</ul>
 							</li>
-							<li>
-								<a href="galeria.html">Galerías</a>
-							</li>
-							<li>
-								<a href="contacto.html">Contacto </a>
-							</li>
+							<li><a href="<?php echo site_url('galerias'); ?>">Galerías</a></li>
+							<li><a href="<?php echo site_url('contacto'); ?>">Contacto </a></li>
 						</ul>
 					</nav><!--MENU MOVIL-->
 					<nav class="menu-desktop columna no-xmall no-medium large large-9">
 						<ul class="span">
-							<li>
-								<a href="about.html">Acerca </a>
-							</li>
-							<li class="">
-								<a href="involucramiento.html">Involucramiento</a>
-							</li>
-							<li>
-								<a href="">Noticias <i class="fa fa-caret-down"></i></a>
+							<li><a href="<?php echo site_url('acerca'); ?>">Acerca </a></li>
+							<li class=""><a href="<?php echo site_url('involucramientos'); ?>">Involucramiento</a></li>
+							<li><a href="">Noticias <i class="fa fa-caret-down"></i></a>
 								<ul class="submenu-200">
-									<li><a href="eventos.html">Eventos</a></li>
-									<!--<li><a href="comunidad.html">Comunidad AIESEC</a></li>
-									<li><a href="logros.html">Logros</a></li>-->
+									<li><a href="<?php echo site_url('noticias'); ?>">Noticias</a></li>
+									<li><a href="<?php echo site_url('eventos'); ?>">Eventos</a></li>
 									<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento">Newsletter</a></li>
-									<li><a href="oportunidades-de-negocio.html">Oportunidades de negocio</a></li>
+									<li><a href="<?php echo site_url('oportunidades-de-negocio'); ?>">Oportunidades de negocio</a></li>
 								</ul>
 							</li>
-							<li>
-								<a href="galeria.html">Galerías</a>
-							</li>
-							<li>
-								<a href="contacto.html">Contacto </a>
-							</li>
+							<li><a href="<?php echo site_url('galerias'); ?>">Galerías</a></li>
+							<li><a href="<?php echo site_url('contacto'); ?>">Contacto </a></li>
 						</ul>
 					</nav><!--MENU DESKTOP-->
 					<form action="/" class="clearfix forma-busqueda columna xmall-8 medium-4 large-3 right margin-bottom">
