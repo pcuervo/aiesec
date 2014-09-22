@@ -30,25 +30,19 @@
 						<a href="#"><i class="fa fa-bars"></i></a>
 					</div>
 					<div class="clear margin-bottom"></div>
-					<!-- <div class="clearfix redes columna xmall-2 right">
-						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-facebook"></i></a>
-						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-google-plus"></i></a>
-						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-twitter"></i></a>
-						<a href="#" class="block text-center columna xmall-3" href=""><i class="fa fa-linkedin"></i></i></a>
-					</div> -->
 					<nav class=" width navegacion menu-movil columna no-xmall no-large margin-bottom">
 						<ul>
 							<li><a href="<?php echo site_url('acerca'); ?>">Acerca</a></li>
 							<li><a href="<?php echo site_url('involucramientos'); ?>">Involucramiento</a></li>
 							<li><a href="">Noticias <i class="fa fa-caret-down"></i></a>
 								<ul>
-									<li><a href="<?php echo site_url('noticias'); ?>">Noticias</a></li>
-									<li><a href="<?php echo site_url('eventos'); ?>">Eventos</a></li>
-									<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento">Newsletter</a></li>
-									<li><a href="<?php echo site_url('oportunidades-de-negocio'); ?>">Oportunidades de negocio</a></li>
+									<li><a href="<?php echo site_url('tipos-de-noticias/noticias'); ?>">Noticias</a></li>
+									<li><a href="<?php echo site_url('tipos-de-noticias/eventos'); ?>">Eventos</a></li>
+									<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento" target="_blank">Newsletter</a></li>
+									<li><a href="<?php echo site_url('tipos-de-noticias/oportunidades-de-negocio'); ?>">Oportunidades de negocio</a></li>
 								</ul>
 							</li>
-							<li><a href="<?php echo site_url('galerias'); ?>">Galerías</a></li>
+							<li><a href="<?php echo site_url('tipos-de-noticias/galerias'); ?>">Galerías</a></li>
 							<li><a href="<?php echo site_url('contacto'); ?>">Contacto </a></li>
 						</ul>
 					</nav><!--MENU MOVIL-->
@@ -58,13 +52,13 @@
 							<li class=""><a href="<?php echo site_url('involucramientos'); ?>">Involucramiento</a></li>
 							<li><a href="">Noticias <i class="fa fa-caret-down"></i></a>
 								<ul class="submenu-200">
-									<li><a href="<?php echo site_url('noticias'); ?>">Noticias</a></li>
-									<li><a href="<?php echo site_url('eventos'); ?>">Eventos</a></li>
-									<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento">Newsletter</a></li>
-									<li><a href="<?php echo site_url('oportunidades-de-negocio'); ?>">Oportunidades de negocio</a></li>
+									<li><a href="<?php echo site_url('tipos-de-noticias/noticias'); ?>">Noticias</a></li>
+									<li><a href="<?php echo site_url('tipos-de-noticias/eventos'); ?>">Eventos</a></li>
+									<li><a href="https://www.smore.com/ynu26-reporte-final-de-reclutamiento" target="_blank">Newsletter</a></li>
+									<li><a href="<?php echo site_url('tipos-de-noticias/oportunidades-de-negocio'); ?>">Oportunidades de negocio</a></li>
 								</ul>
 							</li>
-							<li><a href="<?php echo site_url('galerias'); ?>">Galerías</a></li>
+							<li><a href="<?php echo site_url('tipos-de-noticias/galerias'); ?>">Galerías</a></li>
 							<li><a href="<?php echo site_url('contacto'); ?>">Contacto </a></li>
 						</ul>
 					</nav><!--MENU DESKTOP-->

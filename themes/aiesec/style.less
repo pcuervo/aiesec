@@ -237,43 +237,24 @@ p{ margin-bottom: 1em; }
 
 body{ background: #fff;}
 
-.logo{
-	margin-top: (@margen*1.5);
-}
+.logo{ margin-top: (@margen*1.5); }
 
-h1{
-	margin-top: (@margen*2);
-}
-
+h1{ margin-top: (@margen*2); }
 h2{ .font(2.05em, 1, 600, ~'normal',~'proxima-nova'); color: lighten(@oscuro,20%);}
-
 h3{ .font(1.5em, 1, 600, ~'normal',~'proxima-nova'); color: lighten(@oscuro,20%);}
+h4{ .font(1.2em, 1.5em, ~'proxima-nova'); color: @claro;}
+p{ .font(1.2em, 1.5em); color: lighten(@oscuro,20%); letter-spacing: .01em; }
+h2, h3{ margin: 0 0 (@margen/4) 0; }
 
-h4 {.font(1.2em, 1.5em, ~'proxima-nova'); color: @claro;}
-
-p{
-	.font(1.2em, 1.5em); color: lighten(@oscuro,20%); letter-spacing: .01em;
-}
-
-h2, h3{
-	margin: 0 0 (@margen/4) 0;
-}
-
-
-a{color: lighten(@oscuro,40%); text-decoration: none; .font(1em, 1.5em, 400, ~'normal',~'proxima-nova');}
+a{color: lighten(@oscuro,40%); text-decoration: none; .font(1em, 1.5em, inherit, ~'normal',~'proxima-nova');}
 
 li{.font(1em, 1.5em, 400, ~'normal',~'proxima-nova'); color: lighten(@oscuro,20%);}
-
 ol{ list-style-type: lower-alpha;
-
-	li{.font(1.2em, 1.5em, 400, ~'normal',"minion-pro-display");
-	}
+	li{.font(1.2em, 1.5em, 400, ~'normal',"minion-pro-display"); }
 }
 
 span, time{.font(1em, 1.5em, 400, ~'normal',~'proxima-nova'); margin: 0 @margen/2 0 0;}
-
 hr{height:1px; background: @highlight; border: none;}
-
 label{ .font(1em, 1.5em, 400, ~'normal',~'proxima-nova');}
 
 

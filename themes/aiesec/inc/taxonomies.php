@@ -48,4 +48,8 @@
 			wp_insert_term( 'Noticias', 'tipos-de-noticias' );
 		}
 
+		if ( ! term_exists( 'Galerias', 'tipos-de-noticias' ) ){
+			wp_insert_term( 'Galerias', 'tipos-de-noticias' );
+		}
+
 	}
