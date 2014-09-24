@@ -44,6 +44,7 @@
 							</li>
 							<li><a href="<?php echo site_url('tipos-de-noticias/galerias'); ?>">Galerías</a></li>
 							<li><a href="<?php echo site_url('contacto'); ?>">Contacto </a></li>
+							<li><a href="http://aiesec.org.mx/reg_alumni/">Login </a></li>
 						</ul>
 					</nav><!--MENU MOVIL-->
 					<nav class="menu-desktop columna no-xmall no-medium large large-9">
@@ -60,6 +61,7 @@
 							</li>
 							<li><a href="<?php echo site_url('tipos-de-noticias/galerias'); ?>">Galerías</a></li>
 							<li><a href="<?php echo site_url('contacto'); ?>">Contacto </a></li>
+							<li><a href="http://aiesec.org.mx/reg_alumni/">Login </a></li>
 						</ul>
 					</nav><!--MENU DESKTOP-->
 					<form action="/" class="clearfix forma-busqueda columna xmall-8 medium-4 large-3 right margin-bottom">

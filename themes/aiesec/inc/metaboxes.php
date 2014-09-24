@@ -13,6 +13,7 @@
 			add_meta_box( 'fecha', 'Fecha', 'fecha_meta_callback', 'noticias', 'side', 'high' );
 		}
 
+		add_meta_box( 'datos', 'Datos', 'datos_meta_callback', 'contacto', 'normal', 'high' );
 
 	});
 
@@ -32,6 +33,19 @@ echo <<<END
 	<input type="text" class="widefat datepicker" id="fecha_inicio" name="_fecha_inicio_meta" value='$fecha_inicio' />
 	<label>A:</label>
 	<input type="text" class="widefat datepicker" id="fecha_final" name="_fecha_final_meta" value='$fecha_final'>
+END;
+	}
+
+		function datos_meta_callback($post){
+		$datos_nombre = get_post_meta($post->ID, '_datos_nombre_meta', true);
+		$datos_email = get_post_meta($post->ID, '_datos_email_meta', true);
+		wp_nonce_field(__FILE__, '_datos_nombre_meta_nonce');
+		wp_nonce_field(__FILE__, '_datos_email_meta_nonce');
+echo <<<END
+	<label>Nombre:</label>
+	<input type="text" class="widefat" id="datos_nombre" name="_datos_nombre_meta" value='$datos_nombre' />
+	<label>E-mail:</label>
+	<input type="text" class="widefat" id="datos_email" name="_datos_email_meta" value='$datos_email'>
 END;
 	}
 
@@ -60,6 +74,12 @@ END;
 		}
 		if ( isset($_POST['_fecha_final_meta']) and check_admin_referer(__FILE__, '_fecha_final_meta_nonce') ){
 			update_post_meta($post_id, '_fecha_final_meta', $_POST['_fecha_final_meta']);
+		}
+		if ( isset($_POST['_datos_nombre_meta']) and check_admin_referer(__FILE__, '_datos_nombre_meta_nonce') ){
+			update_post_meta($post_id, '_datos_nombre_meta', $_POST['_datos_nombre_meta']);
+		}
+		if ( isset($_POST['_datos_email_meta']) and check_admin_referer(__FILE__, '_datos_email_meta_nonce') ){
+			update_post_meta($post_id, '_datos_email_meta', $_POST['_datos_email_meta']);
 		}
 
 
