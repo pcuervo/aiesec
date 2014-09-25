@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="main columna xmall-12 medium-8 large-9">
+	<div class="main columna xmall-12 center block">
 		 <section class="full clearfix margin-bottom"><!--Noticias-->
 			<h2 class="columna xmall-8">Oportunidades de Negocio</h2>
 			<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
@@ -13,5 +13,4 @@
 		 	<?php endwhile; endif; wp_reset_postdata(); ?>
 		 </section><!--Oportunidades-->
 	</div><!-- main -->
-	<?php get_sidebar(); ?>
 <?php get_footer(); ?>

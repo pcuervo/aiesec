@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="main h-margin columna xmall-12 medium-8 large-9">
+	<div class="main h-margin columna xmall-12 center block">
 		<section class="clearfix"><!--EVENTOS-->
 			<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 				<div class="columna xmall-10 medium-6 large-4 evento-bloque margin-bottom">
@@ -23,5 +23,4 @@
 
 		</section><!--EVENTOS-->
 	</div><!-- main -->
-	<?php get_sidebar(); ?>
 <?php get_footer(); ?>

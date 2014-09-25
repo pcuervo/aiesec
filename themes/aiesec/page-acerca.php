@@ -1,5 +1,5 @@
 <?php get_header(); the_post(); ?>
-	<div class="main h-margin columna xmall-12 medium-8 large-9">
+	<div class="main h-margin columna xmall-12 center block">
 		<section class="clearfix margin-bottom"><!--OBJETIVOS-->
 			<?php the_post_thumbnail( 'large', array('class' => 'margin-bottom') ); ?>
 			<p class="margin-bottom"><em>AIESEC (Asociación Internacional de Estudiantes en Ciencias Económicas y Comerciales)</em> es la mayor organización del mundo gestionada por jóvenes que provee a sus miembros de una experiencia de desarrollo integrada compuesta de oportunidades de liderazgo, programa internacional de intercambios y la participación en un ambiente global de aprendizaje.</p>
@@ -14,5 +14,4 @@
 				</div>
 		</section>
 	</div><!-- main -->
-	<?php get_sidebar(); ?>
 <?php get_footer(); ?>

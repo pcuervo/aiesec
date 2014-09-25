@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="main h-margin columna xmall-12 medium-8 large-9">
+	<div class="main h-margin columna xmall-12 center block">
 		<section class="clearfix"><!--EVENTOS-->
 			<?php if( have_posts() ) : while( have_posts() ) : the_post();
 				date_default_timezone_set("Mexico/General");
@@ -22,5 +22,4 @@
 			<div class="clear"></div>
 		</section><!--EVENTOS-->
 	</div><!-- main -->
-	<?php get_sidebar(); ?>
 <?php get_footer(); ?>
