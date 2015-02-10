@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="main columna xmall-12 medium-8 large-9">
+	<div class="main columna xmall-12 center block">
 		<section class="relevantes clearfix"><!--RELEVANTES-->
 			<?php
 				$argsRelevantes = array(
@@ -92,5 +92,5 @@
 		 	<?php endwhile; endif; wp_reset_postdata(); ?>
 		 </section><!--Oportunidades-->
 	</div><!-- main -->
-	<?php get_sidebar(); ?>
+	
 <?php get_footer(); ?>

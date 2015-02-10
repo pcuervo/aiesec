@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="main h-margin columna directorio xmall-12 medium-8 large-9">
+	<div class="main h-margin columna directorio xmall-12 center block">
 		<h2>Contacto</h2>
 		<p>Contacta al Vice Presidente del área de Alumni de la entidad local más cercana, para que te dé mayor información.</p>
 		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
@@ -14,5 +14,4 @@
 			</section><!--persona-->
 		<?php endwhile; endif; ?>
 	</div><!-- main -->
-	<?php get_sidebar(); ?>
 <?php get_footer(); ?>
